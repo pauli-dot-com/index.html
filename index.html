@@ -3,169 +3,221 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Die Französische Revolution</title>
+<title>Französische Revolution</title>
 
 <style>
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
 body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background:#f4f4f4;
-    line-height:1.6;
+background:#f1f5f9;
+color:#1e293b;
 }
 
-header{
-    background:linear-gradient(to right,#0055A4,#ffffff,#EF4135);
-    padding:40px;
-    text-align:center;
+.hero{
+height:100vh;
+background:linear-gradient(
+90deg,
+#0055A4 0%,
+#0055A4 33%,
+white 33%,
+white 66%,
+#EF4135 66%
+);
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
 }
 
-header h1{
-    margin:0;
-    font-size:3em;
+.hero-box{
+background:rgba(255,255,255,0.95);
+padding:40px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
 }
 
-header p{
-    font-size:1.2em;
+.hero h1{
+font-size:4rem;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:1.3rem;
 }
 
 section{
-    background:white;
-    max-width:1000px;
-    margin:20px auto;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+max-width:1000px;
+margin:auto;
+padding:80px 20px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+margin-top:30px;
 }
 
 h2{
-    color:#0055A4;
+margin-bottom:20px;
+color:#0055A4;
 }
 
 .timeline{
-    border-left:5px solid #EF4135;
-    padding-left:20px;
+position:relative;
+padding-left:40px;
+border-left:5px solid #EF4135;
 }
 
 .event{
-    margin-bottom:20px;
+margin-bottom:40px;
+}
+
+.event h3{
+color:#EF4135;
+margin-bottom:10px;
+}
+
+ul li{
+margin:10px 0;
+}
+
+.quote{
+background:#0055A4;
+color:white;
+padding:30px;
+border-radius:20px;
+font-size:1.2rem;
+text-align:center;
+margin-top:40px;
 }
 
 footer{
-    text-align:center;
-    background:#0055A4;
-    color:white;
-    padding:20px;
-    margin-top:30px;
+background:#0f172a;
+color:white;
+text-align:center;
+padding:30px;
 }
 
-.highlight{
-    background:#fff3cd;
-    padding:15px;
-    border-left:5px solid orange;
+@media(max-width:700px){
+
+.hero h1{
+font-size:2.2rem;
+}
+
+.hero p{
+font-size:1rem;
+}
+
 }
 
 </style>
-
 </head>
 
 <body>
 
-<header>
-    <h1>Die Französische Revolution</h1>
-    <p>Geschichte - 8. Jahrgangsstufe Bayern</p>
-</header>
-
-<section>
-    <h2>Warum begann die Revolution?</h2>
-
-    <ul>
-        <li>Frankreich war keine Demokratie.</li>
-        <li>Der König hatte sehr viel Macht.</li>
-        <li>Der Dritte Stand hatte kaum Mitspracherecht.</li>
-        <li>Viele Menschen lebten in Armut.</li>
-        <li>Schlechte Ernten machten Brot sehr teuer.</li>
-        <li>Adel und Klerus hatten viele Privilegien.</li>
-    </ul>
-</section>
+<div class="hero">
+<div class="hero-box">
+<h1>🇫🇷 Die Französische Revolution</h1>
+<p>Geschichte | 8. Klasse | Bayern</p>
+</div>
+</div>
 
 <section>
 
-    <h2>Die drei Stände</h2>
+<div class="card">
+<h2>Warum kam es zur Revolution?</h2>
 
-    <ul>
-        <li><strong>1. Stand:</strong> Klerus (Geistliche)</li>
-        <li><strong>2. Stand:</strong> Adel</li>
-        <li><strong>3. Stand:</strong> Bauern, Handwerker und Bürger</li>
-    </ul>
+<ul>
+<li>Keine Demokratie</li>
+<li>Der König hatte fast alle Macht</li>
+<li>Der Dritte Stand durfte kaum mitbestimmen</li>
+<li>Brot wurde immer teurer</li>
+<li>Viele Menschen lebten in Armut</li>
+<li>Adel und Klerus hatten viele Privilegien</li>
+</ul>
+</div>
 
-    <p>
-        Obwohl der Dritte Stand etwa 98 % der Bevölkerung ausmachte,
-        hatte er kaum politische Rechte.
-    </p>
+<div class="card">
+<h2>Die drei Stände</h2>
 
-</section>
+<ul>
+<li><b>1. Stand:</b> Klerus</li>
+<li><b>2. Stand:</b> Adel</li>
+<li><b>3. Stand:</b> Bauern, Handwerker und Bürger</li>
+</ul>
 
-<section>
+<p>
+Der Dritte Stand machte etwa 98 % der Bevölkerung aus,
+hatte jedoch kaum politische Rechte.
+</p>
+</div>
 
-    <h2>Wichtige Ereignisse</h2>
+<div class="card">
+<h2>Zeitstrahl 1789</h2>
 
-    <div class="timeline">
+<div class="timeline">
 
-        <div class="event">
-            <strong>5. Mai 1789</strong><br>
-            Einberufung der Generalstände durch König Ludwig XVI.
-        </div>
+<div class="event">
+<h3>5. Mai 1789</h3>
+<p>Einberufung der Generalstände durch König Ludwig XVI.</p>
+</div>
 
-        <div class="event">
-            <strong>Juni 1789</strong><br>
-            Der Dritte Stand erklärt sich zur Nationalversammlung.
-        </div>
+<div class="event">
+<h3>Juni 1789</h3>
+<p>Der Dritte Stand erklärt sich zur Nationalversammlung.</p>
+</div>
 
-        <div class="event">
-            <strong>Ballhausschwur</strong><br>
-            Die Abgeordneten versprechen eine Verfassung für Frankreich.
-        </div>
+<div class="event">
+<h3>Ballhausschwur</h3>
+<p>Die Abgeordneten versprechen eine Verfassung für Frankreich.</p>
+</div>
 
-        <div class="event">
-            <strong>14. Juli 1789</strong><br>
-            Sturm auf die Bastille.
-        </div>
+<div class="event">
+<h3>14. Juli 1789</h3>
+<p>Sturm auf die Bastille.</p>
+</div>
 
-    </div>
+</div>
+</div>
 
-</section>
+<div class="card">
+<h2>Der Sturm auf die Bastille</h2>
 
-<section>
+<p>
+Die Bastille war ein Gefängnis und ein Symbol der Macht des Königs.
+Am 14. Juli 1789 wurde sie von den Aufständischen gestürmt.
+Dieses Ereignis gilt als Beginn der Französischen Revolution.
+</p>
 
-    <h2>Der Sturm auf die Bastille</h2>
+</div>
 
-    <p>
-        Die Bastille war ein Gefängnis in Paris und ein Symbol der
-        königlichen Macht.
-    </p>
+<div class="quote">
+„Freiheit, Gleichheit, Brüderlichkeit“
+</div>
 
-    <p>
-        Am 14. Juli 1789 stürmte die Bevölkerung die Bastille.
-        Dieses Ereignis gilt als Beginn der Französischen Revolution.
-    </p>
+<div class="card">
+<h2>Meine Einschätzung</h2>
 
-</section>
-
-<section class="highlight">
-
-    <h2>Meine Meinung</h2>
-
-    <p>
-        Der König hätte die Revolution möglicherweise verhindern können,
-        wenn er dem Dritten Stand mehr Mitspracherecht gegeben hätte.
-    </p>
+<p>
+Der König hätte die Revolution vielleicht verhindern können,
+wenn er dem Dritten Stand mehr Mitspracherecht gegeben hätte.
+Da er die Forderungen ablehnte, wurden die Spannungen immer größer.
+</p>
+</div>
 
 </section>
 
 <footer>
-    Präsentation über die Französische Revolution
+Präsentation zur Französischen Revolution • Pauline Stormanns
 </footer>
 
 </body>
